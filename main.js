@@ -32,4 +32,27 @@ function animal(obj){
     })
     return arr
   }
+
+/* Between Extremes Kata */
+
+function betweenExtremes(numbers) {
+    const max = numbers.reduce((a, b) => {
+      if (a > b) {
+        return a
+      } else {
+        return b
+      }   
+    }) 
+    
+    const min = numbers.reduce((a,b) => {
+      if (a < b) {
+        return a
+      } else {
+        return b
+      }
+    }) 
+    const diff = max - min
+    return diff
+  }
+
   
