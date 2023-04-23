@@ -61,8 +61,8 @@ function betweenExtremes(numbers) {
       return 0
     }
     const answer = arguments.reduce((a,b,i) => {
-      return Math.round(a+b/(i+1))
+      return a+b/(i+1)
     }, 0)
-    return answer
+    return Math.round(answer)
   }
-  //passes half the tests 
+  //passes all the tests now
