@@ -55,4 +55,14 @@ function betweenExtremes(numbers) {
     return diff
   }
 
-  
+  /* Decreasing Inputs */
+  function add(...arguments) {
+    if (arguments.length === 0) {
+      return 0
+    }
+    const answer = arguments.reduce((a,b,i) => {
+      return Math.round(a+b/(i+1))
+    }, 0)
+    return answer
+  }
+  //passes half the tests 
