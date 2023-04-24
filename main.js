@@ -66,3 +66,21 @@ function betweenExtremes(numbers) {
     return Math.round(answer)
   }
   //passes all the tests now
+
+  /* Even or Odd */
+  function evenOrOdd(number) {
+    if (number % 2 === 0) {
+      return 'Even'
+    } else {
+      return 'Odd'
+    }
+  }
+
+  /* Convert Number to reverse array of digits */
+  function digitize(n) {
+    const stringN = String(n);
+    const splitN = stringN.split('');
+    const reverseN = splitN.reverse();
+    const mapN = reverseN.map(n => Number(n));
+    return mapN
+  } 
