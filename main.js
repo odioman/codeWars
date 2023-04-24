@@ -84,3 +84,10 @@ function betweenExtremes(numbers) {
     const mapN = reverseN.map(n => Number(n));
     return mapN
   } 
+
+  /* Remove String Spaces */
+  function noSpace(x){
+    const splitX = x.split(' ');
+    const joinX = splitX.join('');
+    return joinX
+  }
