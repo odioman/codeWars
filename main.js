@@ -91,3 +91,10 @@ function betweenExtremes(numbers) {
     const joinX = splitX.join('');
     return joinX
   }
+  /* Disemvowel Trolls */
+  function disemvowel(str) {
+    const strSplit = str.split('');
+    const strSplitFilter = strSplit.filter(consonants => !['a','e','i','o','u','A','E','I','O','U'].includes(consonants);
+    const joinStr = strSplitFilter.join('');
+    return joinStr;
+  }
