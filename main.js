@@ -94,7 +94,18 @@ function betweenExtremes(numbers) {
   /* Disemvowel Trolls */
   function disemvowel(str) {
     const strSplit = str.split('');
-    const strSplitFilter = strSplit.filter(consonants => !['a','e','i','o','u','A','E','I','O','U'].includes(consonants);
+    const strSplitFilter = strSplit.filter(consonants => !['a','e','i','o','u','A','E','I','O','U'].includes(consonants));
     const joinStr = strSplitFilter.join('');
     return joinStr;
+  }
+  
+  /* Count By X*/
+  function countBy(x, n) {
+    let arr  = [];
+    for (let i = 0; i < n; i++) {
+      const multiple = x + (x*i);
+      arr.push(multiple)
+      console.log(arr)
+    }
+    return arr
   }
