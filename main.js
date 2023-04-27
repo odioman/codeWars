@@ -115,3 +115,9 @@ function betweenExtremes(numbers) {
     const needleIndex = haystack.findIndex((element) => element === 'needle');
     return `found the needle at position ${needleIndex}`
   }
+
+  /* You Only Need One - Beginner */
+  function check(a, x) {
+    const checkForX = a.some((element) => element === x)
+    return checkForX
+  }
