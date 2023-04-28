@@ -121,3 +121,16 @@ function betweenExtremes(numbers) {
     const checkForX = a.some((element) => element === x)
     return checkForX
   }
+
+  /* Job Matching #1*/
+  function match(candidate, job) {
+      if (candidate.minSalary - (candidate.minSalary * 10/100) <= job.maxSalary) {
+        return true;
+      } else if (candidate.minSalary === undefined) {
+        throw new Error("No minimum salary provided"); 
+      } else if (job.maxSalary === undefined) {
+        throw new Error("No maximum salary provided"); 
+      } else {
+        return false;
+      }
+    }
