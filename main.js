@@ -162,3 +162,10 @@ class Block{
     getSurfaceArea() {
       return 2 * ((this.width * this.length) + (this.height * this.length) + (this.height * this.width))
     }
+
+}
+
+/* Get Nth Even Number*/
+function nthEven(n){
+    return (n * 2) - 2
+ }
