@@ -169,3 +169,18 @@ class Block{
 function nthEven(n){
     return (n * 2) - 2
  }
+
+/* DNA to RNA Conversion */
+function DNAtoRNA(dna) {
+    const letterT = /T/gi
+    const uReplaceT = dna.replace(letterT, 'U')
+    return uReplaceT
+}
+
+/* Holiday III - Fire on the Boat*/
+function fireFight(s){
+    const splitS = s.split(' ')
+    const mapSplit = splitS.map(str => str.replace(/Fire/gi, '~~'))
+    const joinSplit = mapSplit.join(' ');
+    return joinSplit
+  }
