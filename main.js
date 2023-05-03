@@ -190,3 +190,14 @@ function solution(str){
     const splitReverseJoinStr = str.split('').reverse().join('');
     return splitReverseJoinStr
   }
+
+/* Get the Middle Character */
+function getMiddle(s) {
+    if (s.length % 2 === 0) {
+      const sliceS = s.slice((s.length/2) - 1, (s.length/ 2) + 1)
+      return sliceS
+    } else {
+      const sliceS = s.slice((s.length/2), (s.length/2) + 1)
+      return sliceS
+    }
+  }
