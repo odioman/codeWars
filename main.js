@@ -184,3 +184,9 @@ function fireFight(s){
     const joinSplit = mapSplit.join(' ');
     return joinSplit
   }
+
+/*Reversed Strings*/
+function solution(str){
+    const splitReverseJoinStr = str.split('').reverse().join('');
+    return splitReverseJoinStr
+  }
