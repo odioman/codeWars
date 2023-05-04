@@ -201,3 +201,12 @@ function getMiddle(s) {
       return sliceS
     }
   }
+
+/* Return Negative */
+function makeNegative(num) {
+    if (num <= 0) {
+      return num
+    } else {
+      return -num
+    } 
+  }
