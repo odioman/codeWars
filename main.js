@@ -219,3 +219,12 @@ function NameMe(first, last) {
 }
 
 let n = new NameMe('John', 'Doe')
+
+/* Capitalize first letter of a string */
+String.prototype.capitalize = function() {
+    let firstChar = this.charCodeAt(0);
+    if (firstChar >= 97 && firstChar <= 122) {
+      firstChar -= 32
+    }
+    return String.fromCharCode(firstChar) + this.slice(1)
+  }
