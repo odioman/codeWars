@@ -228,3 +228,16 @@ String.prototype.capitalize = function() {
     }
     return String.fromCharCode(firstChar) + this.slice(1)
   }
+
+/* Thinkful - Object Drills: Quarks */
+class Quark{
+    constructor(color, flavor) {
+      Object.assign(this, {color, flavor, baryon_numer: 0.3333333333333333})
+    }
+    
+    interact(quark) {
+      [this.color, quark.color] = [quark.color, this.color]   
+    }
+  }
+// not passing baryon_number test  
+  
