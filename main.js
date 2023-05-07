@@ -240,4 +240,15 @@ class Quark{
     }
   }
 // not passing baryon_number test  
+
+/* Alphabetically ordered */
+function alphabetic(s) {
+    const splitS = s.split('');
+    for (let i = 1; i < splitS.length; i++) {
+      if (s[i-1] > s[i]) {
+        return false
+      }
+    } 
+    return true
+  }
   
