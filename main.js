@@ -251,4 +251,14 @@ function alphabetic(s) {
     } 
     return true
   }
+
+/* Grasshopper - Summation */
+function summation(num) {
+    const arrayNum = [num]
+    for (let i = 0; i < num; i++) {
+      arrayNum.push(i)
+    }
+    const reduceNum = arrayNum.reduce((a,b) => a + b);
+    return reduceNum
+  }
   
