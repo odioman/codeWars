@@ -232,14 +232,16 @@ String.prototype.capitalize = function() {
 /* Thinkful - Object Drills: Quarks */
 class Quark{
     constructor(color, flavor) {
-      Object.assign(this, {color, flavor, baryon_numer: 0.3333333333333333})
+      this.color = color;
+      this.flavor = flavor;
+      this.baryon_number = 0.3333333333333333;
     }
     
     interact(quark) {
       [this.color, quark.color] = [quark.color, this.color]   
     }
   }
-// not passing baryon_number test  
+// now passes every test 
 
 /* Alphabetically ordered */
 function alphabetic(s) {
@@ -274,3 +276,17 @@ const rps = (p1, p2) => {
       return "Player 2 won!"
     }
 }
+
+/* Find your caterer */
+function findCaterer(budget, people){
+    const i = people <= 60 ? 1 : .8
+      if (people === 0 || budget/people < 15) {
+        return -1
+      } else if (budget/people < 20) {
+        return 1
+      } else if (budget/people < 30 * i) {
+        return 2
+      } else {
+        return 3
+      }
+    }
