@@ -290,3 +290,16 @@ function findCaterer(budget, people){
         return 3
       }
     }
+
+/* Remove All The Marked Elements of a List */
+
+Array.prototype.remove_ = function(integer_list, values_list){
+  const removal = integer_list.filter(x => {
+    if (values_list.includes(x)) {
+      return false  
+    } else {
+      return true
+    }
+  });
+return removal
+}
