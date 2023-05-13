@@ -308,3 +308,8 @@ return removal
 function numberToString(num) {
   return String(num);
 }
+
+/* You Can't Code Under Pressure #1 */
+function doubleInteger(i) {
+  return 2*i;
+}
