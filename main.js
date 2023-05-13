@@ -303,3 +303,8 @@ Array.prototype.remove_ = function(integer_list, values_list){
   });
 return removal
 }
+
+/* Convert a Number to a String*/
+function numberToString(num) {
+  return String(num);
+}
