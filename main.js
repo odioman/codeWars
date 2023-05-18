@@ -313,3 +313,25 @@ function numberToString(num) {
 function doubleInteger(i) {
   return 2*i;
 }
+
+/* You're a square */
+var isSquare = function(n){
+  if (Number.isInteger(Math.pow(n, .5))) {
+    return true
+  } else {
+    return false
+  }
+}
+
+/* All unique */
+function hasUniqueChars(str){
+  const strSplit = str.split('');
+  for (let i = 0; i < strSplit.length; i++) {
+    if (strSplit[i] === strSplit[i+1]) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+//passing 7 tests
