@@ -346,3 +346,16 @@ function feast(beast, dish) {
     return false;
   }
 }
+
+/* If you can't sleep, just count sheep!! */
+var countSheep = function (num){
+  let returnMsg = '';
+  if (num === 0) {
+    return ''
+  } 
+  
+  for (let i = 1; i <= num; i++) {
+    returnMsg += i + " sheep..."
+  }
+  return returnMsg
+}
